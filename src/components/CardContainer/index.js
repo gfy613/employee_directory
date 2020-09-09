@@ -4,7 +4,9 @@ import "./style.css";
 
 function CardContainer({ image, firstname, lastname, phone, dob }) {
   return (
-    <div className="jumbotron card-container">
+    <tr className="jumbotron card-container">
+      {/* <td><img src={image}/></td>
+  <td><Name firstName={firstname} /></td> */}
       <Card
         image={image}
         firstname={firstname}
@@ -12,7 +14,7 @@ function CardContainer({ image, firstname, lastname, phone, dob }) {
           phone={phone}
           dob={dob}
       />
-    </div>
+    </tr>
   );
 }
 

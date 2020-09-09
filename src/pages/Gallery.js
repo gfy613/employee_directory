@@ -1,14 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, Component } from "react";
 import API from "../utils/API";
 import CardContainer from "../components/CardContainer";
-import Row from "../components/Row";
+
 
 function Gallery() {
  
   const [users, setUsers] = useState([]);
   const [matched,setMatched] =useState([])
 
-  const [userIndex, setUserIndex] = useState(0);
 
   // When the component mounts, a call will be made to get random users.
   useEffect(() => {
@@ -30,9 +29,9 @@ function Gallery() {
       .catch(err => console.log(err));
   }
 
-  function handleInput(e){
-    console.log(e.target.value)
-    let nameSearch =e.target.value.toLowerCase()
+  function handleInput(searchName){
+    console.log(searchName.target.value)
+    let nameSearch =searchName.target.value.toLowerCase()
 
     let x =matched.filter(item=>{
       let firstName=item.firstname.toLowerCase()
@@ -43,8 +42,9 @@ function Gallery() {
     console.log("check arr")
     console.log(x)
     setMatched(x)
-    // setMatched(matched)
-  }
+  };
+
+
 
   return (
     <div>
@@ -52,21 +52,30 @@ function Gallery() {
       <p className="text-center h3">Click on the arrows to browse users</p> */}
        <input type="text" onChange={handleInput}/>
 
-      
-       
+       <table className="table table-striped table-hover table-condensed align-middle" size = "md">
+       <thead>
+    <tr>
+      <th className="align-middle">Image</th>
+      <th className="align-middle" ><button type="button" >
+          Name
+        </button>
+      </th>
+      <th className="align-middle">Phone</th>
+      <th className="align-middle">DOB</th>
+    </tr>
+  </thead>
         {matched.map(user=>{
-         return <Row>
-      <CardContainer
+         return <CardContainer      
       image={user?.image}
       firstname={user?.firstname}
       lastname={user?.lastname}
       phone={user?.phone}
-      // dob={user?.dob}
+      dob={user?.dob}
     />
-          </Row>
+        
         })}
   
-      
+  </table>
     </div>
   );
 }

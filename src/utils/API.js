@@ -4,14 +4,15 @@ import axios from "axios";
 export default {
   fetchUsers: function() {
     return axios
-      .get("https://randomuser.me/api/?results=50")
+      .get("https://randomuser.me/api/?results=50&nat=us")
       .then(res => {
+        console.log(res.data.results)
         const users = res.data.results;
         return users.map(user => {
           return {
             gender: user.gender,
             image: user.picture.thumbnail,
-            dob: user.dob,
+            dob: user.dob.age,
             phone: user.phone,
             email: user.email,
             firstname: user.name.first,
