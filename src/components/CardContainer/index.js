@@ -6,10 +6,6 @@ function CardContainer({ image, firstname, lastname, phone, dob }) {
   return (
     <div className="jumbotron card-container">
       <Card
-        // title={title}
-        // image={image}
-        // profileUrl={profileUrl}
-        // handleBtnClick={handleBtnClick}
         image={image}
         firstname={firstname}
         lastname={lastname}

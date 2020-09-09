@@ -7,8 +7,6 @@ export default {
       .get("https://randomuser.me/api/?results=50")
       .then(res => {
         const users = res.data.results;
-        console.log(res.data)
-        console.log(res.data.results[0].gender)
         return users.map(user => {
           return {
             gender: user.gender,

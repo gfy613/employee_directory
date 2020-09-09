@@ -9,6 +9,7 @@ function App() {
     <div>
       <Navbar />
       <Wrapper>
+        {/* <Header/> */}
         <Gallery />
       </Wrapper>
       <Footer />
