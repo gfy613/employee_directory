@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/gfy613/employee_directory/static/css/main.1c0f3687.chunk.css",
+    "main.js": "/gfy613/employee_directory/static/js/main.1881a1fb.chunk.js",
+    "main.js.map": "/gfy613/employee_directory/static/js/main.1881a1fb.chunk.js.map",
+    "runtime-main.js": "/gfy613/employee_directory/static/js/runtime-main.787dd6e9.js",
+    "runtime-main.js.map": "/gfy613/employee_directory/static/js/runtime-main.787dd6e9.js.map",
+    "static/css/2.d9ad5f5c.chunk.css": "/gfy613/employee_directory/static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.a07ade1a.chunk.js": "/gfy613/employee_directory/static/js/2.a07ade1a.chunk.js",
+    "static/js/2.a07ade1a.chunk.js.map": "/gfy613/employee_directory/static/js/2.a07ade1a.chunk.js.map",
+    "index.html": "/gfy613/employee_directory/index.html",
+    "precache-manifest.95f5b2fc46b36ff7d001c0ed092b89d1.js": "/gfy613/employee_directory/precache-manifest.95f5b2fc46b36ff7d001c0ed092b89d1.js",
+    "service-worker.js": "/gfy613/employee_directory/service-worker.js",
+    "static/css/2.d9ad5f5c.chunk.css.map": "/gfy613/employee_directory/static/css/2.d9ad5f5c.chunk.css.map",
+    "static/css/main.1c0f3687.chunk.css.map": "/gfy613/employee_directory/static/css/main.1c0f3687.chunk.css.map",
+    "static/js/2.a07ade1a.chunk.js.LICENSE.txt": "/gfy613/employee_directory/static/js/2.a07ade1a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.787dd6e9.js",
+    "static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.a07ade1a.chunk.js",
+    "static/css/main.1c0f3687.chunk.css",
+    "static/js/main.1881a1fb.chunk.js"
+  ]
+}
